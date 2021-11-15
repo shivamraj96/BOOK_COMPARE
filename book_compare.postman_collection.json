@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "3eb4bb2c-8aad-4f73-87c7-1cb48b0125bd",
+		"name": "book_compare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Compare books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"book1\":{\r\n        \"tittle\":\"harry potter\",\"ISBN\":\"8252\",\"first_name\":\"ivam\",\"last_name\":\"raj\",\r\n        \"pub_date\":\"Sun Nov 14 2021 15:22:01 GMT+0530 (India Standard Time)\"\r\n    },\r\n    \"book2\":{\r\n        \"tittle\":\"harry potter\",\"ISBN\":\"8252\",\"first_name\":\"ivam\",\"last_name\":\"raj\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/books/compare",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"books",
+						"compare"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
